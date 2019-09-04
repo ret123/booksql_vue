@@ -75,7 +75,7 @@
             <ApolloQuery
               :query="query"
               :variables="{featured: true}"
-              v-if="selectedCategory ===  'featured'"
+              v-else-if="selectedCategory ===  'featured'"
             >
               <!-- The result will automatically updated -->
               <template slot-scope="{ result: { data, loading }, isLoading }">
